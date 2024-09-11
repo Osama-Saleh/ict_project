@@ -146,56 +146,7 @@ class _HomeScreenState extends State<HomeScreen> {
               SizedBox(
                 height: 50,
               ),
-              Container(
-                height: 300,
-                child: ListView.separated(
-                    itemBuilder: (context, index) {
-                      return Container(
-                        padding: EdgeInsets.symmetric(vertical: 15),
-                        margin: EdgeInsets.symmetric(horizontal: 20),
-                        decoration: BoxDecoration(
-                          color: Colors.grey.withOpacity(0.8),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        child: ListTile(
-                          leading: Container(
-                            width: 100,
-                            height: 100,
-                            clipBehavior: Clip.antiAlias,
-                            decoration: BoxDecoration(
-                              color: Colors.blue,
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            child: const CustomeImageAsset(
-                                pathImage: 'assets/image/person.jpg'),
-                          ),
-                          // title: Text('image ${index + 1}'),
-                          title: CustomText(
-                            text: 'image ${index + 1}',
-                            color: const Color.fromARGB(255, 170, 243, 33),
-                            fontSize: 25,
-                          ),
-                          // subtitle: Text(
-                          //   'description ${index + 1}',
-                          //   style: TextStyle(fontSize: 20, color: Colors.black),
-                          // ),
-                          subtitle: CustomText(
-                            text: 'description ${index + 1}',
-                            fontSize: 14,
-                          ),
-                          trailing: const Icon(
-                            Icons.delete,
-                            color: Colors.red,
-                            size: 35,
-                          ),
-                        ),
-                      );
-                    },
-                    separatorBuilder: (context, index) => const SizedBox(
-                          height: 20,
-                        ),
-                    itemCount: 5),
-              ),
+              
               const SizedBox(
                 height: 200,
               ),

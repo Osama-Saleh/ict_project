@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ictproject/ui/buttom_naviagation_bar.dart';
 import 'package:ictproject/ui/home_screen.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      home: MainScreen(),
     );
   }
 }
